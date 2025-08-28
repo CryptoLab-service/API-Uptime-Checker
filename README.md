@@ -57,6 +57,7 @@ The workflow reads from a Google Sheet with the following columns:
 
 ## 📈 Workflow Map
 
+```mermaid
 flowchart TD
   A[⏰ Schedule Trigger<br>Every 5–10 mins] --> B[📄 Read Endpoints<br>from Google Sheets]
   B --> C[🔁 Split In Batches<br>Iterate Each Endpoint]
@@ -67,6 +68,7 @@ flowchart TD
   F -- No --> H[✅ All Good<br>Continue Monitoring]
   G --> I[📝 Log Incident<br>to API Health Log Sheet]
   H --> I
+```
 
 ---
 
