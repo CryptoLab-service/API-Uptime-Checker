@@ -1,0 +1,7 @@
+URL,Method,Headers,ExpectedCode,MaxLatencyMs
+https://api.cryptolab.io/ping,GET,"Authorization: Bearer abc123",200,500
+https://api.cryptolab.io/user,GET,"Authorization: Bearer abc123",200,800
+https://api.cryptolab.io/auth,POST,"Content-Type: application/json",201,1000
+https://api.cryptolab.io/data,GET,"Authorization: Bearer abc123",200,700
+https://api.cryptolab.io/slow,GET,"Authorization: Bearer abc123",200,1500
+https://api.cryptolab.io/fail,GET,"Authorization: Bearer abc123",500,1000
